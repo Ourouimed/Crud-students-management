@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: black;
+    padding: 10px 30px;
+    color: white;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 100px;
+}
+
+.container {
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.students-form {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px #cbcbcb6b;
+    width: 300px;
+}
+.students-form > h2 {
+    margin-bottom: 10px;
+}
+.students-form input, .students-form select {
+    width: 100%;
+    border: 2px solid #ededed;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.students-form button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background: blue;
+    color: white;
+}
+
+
+table {
+    border-collapse: collapse;
+    height: max-content;
+}
+thead tr{
+    background-color: blue;
+    color: white;
+}
+tbody tr{
+    border: 2px solid #ededed;
+}
+
+td {
+    padding: 5px 10px;
+    text-align: center;
+}
+td.action-btns {
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.action-btns button{
+    padding: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#remove-stud {
+    background: red;
+}
+
+#update-stud {
+    background: green;
+}
